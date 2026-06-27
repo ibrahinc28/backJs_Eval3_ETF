@@ -20,11 +20,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ── 1. Checkout ─────────────────────────────────────────────────────────
+      
       - name: Checkout del código
         uses: actions/checkout@v4
 
-      # ── 2. Autenticación AWS (AWS Academy requiere SESSION_TOKEN) ────────────
+      # ── 2. Autenticación AWS ────────────
       - name: Configurar credenciales AWS
         uses: aws-actions/configure-aws-credentials@v4
         with:
